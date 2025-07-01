@@ -1,0 +1,3 @@
+/home/sunyahui/DIFUSCO/data/GST_data/build/CMakeFiles/GST_data.dir
+/home/sunyahui/DIFUSCO/data/GST_data/build/CMakeFiles/edit_cache.dir
+/home/sunyahui/DIFUSCO/data/GST_data/build/CMakeFiles/rebuild_cache.dir

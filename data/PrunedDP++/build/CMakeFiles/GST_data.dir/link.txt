@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/GST_data.dir/GST_data.cpp.o -o GST_data  -Wl,-rpath,/usr/local/cuda-11.8/targets/x86_64-linux/lib /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudart.so 

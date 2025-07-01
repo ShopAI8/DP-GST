@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/sunyahui/DIFUSCO/data/GST_data/build",
+  "command": "/usr/bin/c++  -I/home/sunyahui/DIFUSCO/data/GST_data/rucgraph -isystem /home/sunyahui/DIFUSCO/data/GST_data/rucgraph/boost -isystem /usr/local/cuda/include -std=gnu++17 -o CMakeFiles/GST_data.dir/GST_data.cpp.o -c /home/sunyahui/DIFUSCO/data/GST_data/GST_data.cpp",
+  "file": "/home/sunyahui/DIFUSCO/data/GST_data/GST_data.cpp",
+  "output": "CMakeFiles/GST_data.dir/GST_data.cpp.o"
+}
+]

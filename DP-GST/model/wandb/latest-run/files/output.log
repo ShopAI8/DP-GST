@@ -1,0 +1,340 @@
+Logging to ./model/gst_diffusion/8pqihk64
+/home/sunyahui/anaconda3/envs/difusco/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:479: LightningDeprecationWarning: Setting `Trainer(gpus=[0, 3])` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=[0, 3])` instead.
+  f"Setting `Trainer(gpus={gpus!r})` is deprecated in v1.7 and will be removed"
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+----------------------------------------------------------------------------------------------------
+ResidualGatedGCNModel(
+  (nodes_coord_embedding): Linear(in_features=1, out_features=256, bias=False)
+  (edge_embed): Sequential(
+    (0): Linear(in_features=1, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=256, bias=True)
+  )
+  (gcn_layers): ModuleList(
+    (0): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (2): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (3): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (4): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (5): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (6): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (7): ResidualGatedGCNLayer(
+      (node_feat): NodeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (edge_feat): EdgeFeatures(
+        (Us): Linear(in_features=256, out_features=256, bias=True)
+        (Vs): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (bn_node): BatchNormNode(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (bn_edge): BatchNormEdge(
+        (layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (mlp_edges): MLP(
+    (layers): Sequential()
+    (output): Linear(in_features=256, out_features=1, bias=True)
+    (out): Sequential(
+      (0): GroupNorm32(32, 256, eps=1e-05, affine=True)
+      (1): ReLU()
+      (2): Conv2d(256, 1, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+----------------------------------------------------------------------------------------------------
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/2
+Loaded "./../data/tasks_30-num_2000-epsilon_1-delta_1e-05/orkut_GST1k-gamma_3-noise/test_split.txt" with 600 lines
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 2 processes
+----------------------------------------------------------------------------------------------------
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+Restoring states from the checkpoint path at /home/sunyahui/DIFUSCO/difusco/models4GCN/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+Loaded model weights from checkpoint at /home/sunyahui/DIFUSCO/difusco/models4GCN/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt
+/home/sunyahui/anaconda3/envs/difusco/lib/python3.7/site-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/home/sunyahui/anaconda3/envs/difusco/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:320: PossibleUserWarning: Using `DistributedSampler` with the dataloaders. During `trainer.test()`, it is recommended to use `Trainer(devices=1, num_nodes=1)` to ensure each sample/batch gets evaluated exactly once. Otherwise, multi-device settings use `DistributedSampler` that replicates some samples to make sure all devices have same batch size in case of uneven inputs.
+  category=PossibleUserWarning,
+/home/sunyahui/anaconda3/envs/difusco/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:229: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 64 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  category=PossibleUserWarning,
+/home/sunyahui/anaconda3/envs/difusco/lib/python3.7/site-packages/torch/nn/functional.py:1967: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+Test dataset size: 600
+Testing DataLoader 0:   0%|                                                                             | 0/300 [00:00<?, ?it/s]error :0.0
+Testing DataLoader 0:   0%|▏                                                                    | 1/300 [00:00<02:33,  1.95it/s]error :0.0
+Testing DataLoader 0:   1%|▍                                                                    | 2/300 [00:01<03:14,  1.53it/s]error :0.0
+Testing DataLoader 0:   1%|▋                                                                    | 3/300 [00:02<03:21,  1.48it/s]error :0.0
+Testing DataLoader 0:   1%|▉                                                                    | 4/300 [00:02<02:48,  1.75it/s]error :0.0
+Testing DataLoader 0:   2%|█▏                                                                   | 5/300 [00:02<02:51,  1.72it/s]error :0.0
+Testing DataLoader 0:   2%|█▍                                                                   | 6/300 [00:03<02:33,  1.92it/s]error :0.0
+Testing DataLoader 0:   2%|█▌                                                                   | 7/300 [00:03<02:20,  2.09it/s]error :0.0
+Testing DataLoader 0:   3%|█▊                                                                   | 8/300 [00:03<02:25,  2.01it/s]error :0.0
+Testing DataLoader 0:   3%|██                                                                   | 9/300 [00:04<02:30,  1.94it/s]error :0.0
+Testing DataLoader 0:   3%|██▎                                                                 | 10/300 [00:04<02:21,  2.05it/s]error :0.48148148148148145
+Testing DataLoader 0:   4%|██▍                                                                 | 11/300 [00:05<02:23,  2.01it/s]error :0.0
+Testing DataLoader 0:   4%|██▋                                                                 | 12/300 [00:06<02:28,  1.94it/s]error :0.0
+Testing DataLoader 0:   4%|██▉                                                                 | 13/300 [00:07<02:35,  1.85it/s]error :0.0
+Testing DataLoader 0:   5%|███▏                                                                | 14/300 [00:07<02:36,  1.83it/s]error :0.0
+Testing DataLoader 0:   5%|███▍                                                                | 15/300 [00:08<02:37,  1.81it/s]error :0.0
+Testing DataLoader 0:   5%|███▋                                                                | 16/300 [00:08<02:38,  1.79it/s]error :0.0
+Testing DataLoader 0:   6%|███▊                                                                | 17/300 [00:09<02:31,  1.87it/s]error :0.0
+Testing DataLoader 0:   6%|████                                                                | 18/300 [00:09<02:25,  1.94it/s]error :0.0
+Testing DataLoader 0:   6%|████▎                                                               | 19/300 [00:09<02:23,  1.96it/s]error :0.0
+Testing DataLoader 0:   7%|████▌                                                               | 20/300 [00:10<02:22,  1.96it/s]error :0.0
+Testing DataLoader 0:   7%|████▊                                                               | 21/300 [00:10<02:20,  1.98it/s]error :0.0
+Testing DataLoader 0:   7%|████▉                                                               | 22/300 [00:11<02:21,  1.96it/s]error :0.0
+Testing DataLoader 0:   8%|█████▏                                                              | 23/300 [00:11<02:16,  2.03it/s]error :0.0
+Testing DataLoader 0:   8%|█████▍                                                              | 24/300 [00:11<02:17,  2.01it/s]error :0.0
+Testing DataLoader 0:   8%|█████▋                                                              | 25/300 [00:12<02:13,  2.06it/s]error :0.0
+Testing DataLoader 0:   9%|█████▉                                                              | 26/300 [00:12<02:09,  2.11it/s]error :0.0
+Testing DataLoader 0:   9%|██████                                                              | 27/300 [00:12<02:09,  2.11it/s]error :0.0
+Testing DataLoader 0:   9%|██████▎                                                             | 28/300 [00:13<02:10,  2.09it/s]error :0.0
+Testing DataLoader 0:  10%|██████▌                                                             | 29/300 [00:13<02:09,  2.09it/s]error :0.0
+Testing DataLoader 0:  10%|██████▊                                                             | 30/300 [00:14<02:08,  2.09it/s]error :0.0
+Testing DataLoader 0:  10%|███████                                                             | 31/300 [00:14<02:08,  2.10it/s]error :0.0
+Testing DataLoader 0:  11%|███████▎                                                            | 32/300 [00:15<02:07,  2.10it/s]error :0.0
+Testing DataLoader 0:  11%|███████▍                                                            | 33/300 [00:15<02:06,  2.10it/s]error :0.1388888888888889
+Testing DataLoader 0:  11%|███████▋                                                            | 34/300 [00:16<02:06,  2.11it/s]error :0.0
+Testing DataLoader 0:  12%|███████▉                                                            | 35/300 [00:16<02:06,  2.10it/s]error :0.0
+Testing DataLoader 0:  12%|████████▏                                                           | 36/300 [00:16<02:03,  2.14it/s]error :0.0
+Testing DataLoader 0:  12%|████████▍                                                           | 37/300 [00:17<02:02,  2.15it/s]error :0.0
+Testing DataLoader 0:  13%|████████▌                                                           | 38/300 [00:17<02:00,  2.18it/s]error :0.0
+Testing DataLoader 0:  13%|████████▊                                                           | 39/300 [00:17<01:57,  2.21it/s]error :0.0
+Testing DataLoader 0:  13%|█████████                                                           | 40/300 [00:17<01:55,  2.25it/s]error :0.0
+Testing DataLoader 0:  14%|█████████▎                                                          | 41/300 [00:18<01:54,  2.25it/s]error :0.0
+Testing DataLoader 0:  14%|█████████▌                                                          | 42/300 [00:18<01:52,  2.29it/s]error :0.0
+Testing DataLoader 0:  14%|█████████▋                                                          | 43/300 [00:18<01:53,  2.27it/s]error :0.0
+Testing DataLoader 0:  15%|█████████▉                                                          | 44/300 [00:19<01:53,  2.26it/s]error :0.0
+Testing DataLoader 0:  15%|██████████▏                                                         | 45/300 [00:19<01:52,  2.26it/s]error :0.0
+Testing DataLoader 0:  15%|██████████▍                                                         | 46/300 [00:20<01:52,  2.25it/s]error :0.0
+Testing DataLoader 0:  16%|██████████▋                                                         | 47/300 [00:20<01:50,  2.29it/s]error :0.0
+Testing DataLoader 0:  16%|██████████▉                                                         | 48/300 [00:21<01:50,  2.28it/s]error :0.0
+Testing DataLoader 0:  16%|███████████                                                         | 49/300 [00:21<01:48,  2.31it/s]error :0.0
+Testing DataLoader 0:  17%|███████████▎                                                        | 50/300 [00:21<01:49,  2.29it/s]error :0.0
+Testing DataLoader 0:  17%|███████████▌                                                        | 51/300 [00:22<01:48,  2.28it/s]error :0.0
+Testing DataLoader 0:  17%|███████████▊                                                        | 52/300 [00:22<01:49,  2.27it/s]error :0.0
+Testing DataLoader 0:  18%|████████████                                                        | 53/300 [00:23<01:47,  2.29it/s]error :0.0
+Testing DataLoader 0:  18%|████████████▏                                                       | 54/300 [00:23<01:48,  2.28it/s]error :0.0
+Testing DataLoader 0:  18%|████████████▍                                                       | 55/300 [00:23<01:46,  2.30it/s]error :0.018518518518518517
+Testing DataLoader 0:  19%|████████████▋                                                       | 56/300 [00:24<01:46,  2.30it/s]error :0.0
+Testing DataLoader 0:  19%|████████████▉                                                       | 57/300 [00:24<01:44,  2.32it/s]error :0.0
+Testing DataLoader 0:  19%|█████████████▏                                                      | 58/300 [00:25<01:44,  2.30it/s]error :0.0
+Testing DataLoader 0:  20%|█████████████▎                                                      | 59/300 [00:25<01:44,  2.30it/s]error :0.0
+Testing DataLoader 0:  20%|█████████████▌                                                      | 60/300 [00:26<01:44,  2.30it/s]error :0.0
+Testing DataLoader 0:  20%|█████████████▊                                                      | 61/300 [00:26<01:43,  2.30it/s]error :0.0
+Testing DataLoader 0:  21%|██████████████                                                      | 62/300 [00:26<01:43,  2.30it/s]error :0.06349206349206349
+Testing DataLoader 0:  21%|██████████████▎                                                     | 63/300 [00:27<01:43,  2.29it/s]error :0.0
+Testing DataLoader 0:  21%|██████████████▌                                                     | 64/300 [00:27<01:42,  2.31it/s]error :0.0
+Testing DataLoader 0:  22%|██████████████▋                                                     | 65/300 [00:28<01:41,  2.32it/s]error :0.07936507936507936
+Testing DataLoader 0:  22%|██████████████▉                                                     | 66/300 [00:28<01:41,  2.31it/s]error :0.018518518518518517
+Testing DataLoader 0:  22%|███████████████▏                                                    | 67/300 [00:29<01:41,  2.29it/s]error :0.0
+Testing DataLoader 0:  23%|███████████████▍                                                    | 68/300 [00:29<01:41,  2.28it/s]error :0.0
+Testing DataLoader 0:  23%|███████████████▋                                                    | 69/300 [00:30<01:41,  2.27it/s]error :0.1746031746031746
+Testing DataLoader 0:  23%|███████████████▊                                                    | 70/300 [00:30<01:41,  2.26it/s]error :0.0
+Testing DataLoader 0:  24%|████████████████                                                    | 71/300 [00:31<01:41,  2.25it/s]error :0.2037037037037037
+Testing DataLoader 0:  24%|████████████████▎                                                   | 72/300 [00:32<01:42,  2.23it/s]error :0.0
+Testing DataLoader 0:  24%|████████████████▌                                                   | 73/300 [00:32<01:41,  2.23it/s]error :0.0
+Testing DataLoader 0:  25%|████████████████▊                                                   | 74/300 [00:32<01:40,  2.25it/s]error :0.0
+Testing DataLoader 0:  25%|█████████████████                                                   | 75/300 [00:33<01:39,  2.26it/s]error :0.09523809523809523
+Testing DataLoader 0:  25%|█████████████████▏                                                  | 76/300 [00:33<01:39,  2.25it/s]error :0.0
+Testing DataLoader 0:  26%|█████████████████▍                                                  | 77/300 [00:33<01:38,  2.27it/s]error :0.0
+Testing DataLoader 0:  26%|█████████████████▋                                                  | 78/300 [00:34<01:38,  2.26it/s]error :0.0
+Testing DataLoader 0:  26%|█████████████████▉                                                  | 79/300 [00:35<01:38,  2.25it/s]error :0.0
+Testing DataLoader 0:  27%|██████████████████▏                                                 | 80/300 [00:35<01:37,  2.25it/s]error :0.0
+Testing DataLoader 0:  27%|██████████████████▎                                                 | 81/300 [00:35<01:37,  2.26it/s]error :0.0
+Testing DataLoader 0:  27%|██████████████████▌                                                 | 82/300 [00:36<01:37,  2.25it/s]error :0.0
+Testing DataLoader 0:  28%|██████████████████▊                                                 | 83/300 [00:36<01:36,  2.26it/s]error :0.0
+Testing DataLoader 0:  28%|███████████████████                                                 | 84/300 [00:36<01:34,  2.27it/s]error :0.0
+Testing DataLoader 0:  28%|███████████████████▎                                                | 85/300 [00:37<01:34,  2.27it/s]error :0.0
+Testing DataLoader 0:  29%|███████████████████▍                                                | 86/300 [00:37<01:33,  2.29it/s]error :0.0
+Testing DataLoader 0:  29%|███████████████████▋                                                | 87/300 [00:37<01:32,  2.31it/s]error :0.0
+Testing DataLoader 0:  29%|███████████████████▉                                                | 88/300 [00:38<01:31,  2.31it/s]error :0.0
+Testing DataLoader 0:  30%|████████████████████▏                                               | 89/300 [00:38<01:30,  2.32it/s]error :0.0
+Testing DataLoader 0:  30%|████████████████████▍                                               | 90/300 [00:38<01:29,  2.34it/s]error :0.0
+Testing DataLoader 0:  30%|████████████████████▋                                               | 91/300 [00:38<01:29,  2.34it/s]error :0.0
+Testing DataLoader 0:  31%|████████████████████▊                                               | 92/300 [00:39<01:28,  2.34it/s]error :0.0
+Testing DataLoader 0:  31%|█████████████████████                                               | 93/300 [00:39<01:27,  2.36it/s]error :0.0
+Testing DataLoader 0:  31%|█████████████████████▎                                              | 94/300 [00:39<01:27,  2.35it/s]error :0.0
+Testing DataLoader 0:  32%|█████████████████████▌                                              | 95/300 [00:40<01:27,  2.35it/s]error :0.0
+Testing DataLoader 0:  32%|█████████████████████▊                                              | 96/300 [00:40<01:26,  2.37it/s]error :0.0
+Testing DataLoader 0:  32%|█████████████████████▉                                              | 97/300 [00:40<01:25,  2.38it/s]error :0.0
+Testing DataLoader 0:  33%|██████████████████████▏                                             | 98/300 [00:40<01:24,  2.40it/s]error :0.0
+Testing DataLoader 0:  33%|██████████████████████▍                                             | 99/300 [00:41<01:23,  2.39it/s]error :0.018518518518518517
+Testing DataLoader 0:  33%|██████████████████████▎                                            | 100/300 [00:41<01:23,  2.38it/s]error :0.018518518518518517
+Testing DataLoader 0:  35%|███████████████████████▍                                           | 105/300 [00:44<01:22,  2.37it/s]error :0.0
+Testing DataLoader 0:  34%|██████████████████████▊                                            | 102/300 [00:42<01:23,  2.38it/s]error :0.0
+Testing DataLoader 0:  34%|███████████████████████                                            | 103/300 [00:43<01:22,  2.37it/s]error :0.0
+Testing DataLoader 0:  35%|███████████████████████▏                                           | 104/300 [00:43<01:22,  2.37it/s]error :0.07936507936507936
+Testing DataLoader 0:  36%|████████████████████████▎                                          | 109/300 [00:46<01:21,  2.36it/s]error :0.018518518518518517
+Testing DataLoader 0:  35%|███████████████████████▋                                           | 106/300 [00:44<01:22,  2.36it/s]error :0.0
+Testing DataLoader 0:  36%|███████████████████████▉                                           | 107/300 [00:45<01:22,  2.35it/s]error :0.018518518518518517
+Testing DataLoader 0:  36%|████████████████████████                                           | 108/300 [00:46<01:21,  2.34it/s]error :0.0
+Testing DataLoader 0:  38%|█████████████████████████▏                                         | 113/300 [00:47<01:18,  2.37it/s]error :0.375518518518518517
+Testing DataLoader 0:  37%|████████████████████████▌                                          | 110/300 [00:46<01:20,  2.35it/s]error :0.0
+Testing DataLoader 0:  37%|████████████████████████▊                                          | 111/300 [00:46<01:19,  2.37it/s]error :0.018518518518518517
+Testing DataLoader 0:  37%|█████████████████████████                                          | 112/300 [00:47<01:19,  2.36it/s]error :0.0
+Testing DataLoader 0:  38%|█████████████████████████▏                                         | 113/300 [00:47<01:18,  2.37it/s]error :0.375518518518518517
+Testing DataLoader 0:  38%|█████████████████████████▍                                         | 114/300 [00:48<01:18,  2.37it/s]error :0.0
+Testing DataLoader 0:  38%|█████████████████████████▋                                         | 115/300 [00:48<01:17,  2.38it/s]error :0.0
+Testing DataLoader 0:  39%|█████████████████████████▉                                         | 116/300 [00:48<01:17,  2.38it/s]error :0.0
+Testing DataLoader 0:  39%|██████████████████████████▏                                        | 117/300 [00:48<01:16,  2.39it/s]error :0.018518518518518517
+Testing DataLoader 0:  39%|██████████████████████████▎                                        | 118/300 [00:49<01:16,  2.38it/s]error :0.0
+Testing DataLoader 0:  40%|██████████████████████████▌                                        | 119/300 [00:49<01:15,  2.38it/s]error :0.0
+Testing DataLoader 0:  40%|██████████████████████████▊                                        | 120/300 [00:50<01:15,  2.38it/s]
+Testing DataLoader 0:  40%|███████████████████████████                                        | 121/300 [00:50<01:15,  2.38it/s]error :0.0
+Testing DataLoader 0:  41%|███████████████████████████▏                                       | 122/300 [00:51<01:14,  2.39it/s]error :0.0
+Testing DataLoader 0:  41%|███████████████████████████▍                                       | 123/300 [00:51<01:14,  2.39it/s]error :0.0
+Testing DataLoader 0:  41%|███████████████████████████▋                                       | 124/300 [00:52<01:13,  2.38it/s]error :0.0
+Testing DataLoader 0:  42%|███████████████████████████▉                                       | 125/300 [00:52<01:13,  2.38it/s]
+Testing DataLoader 0:  42%|████████████████████████████▎                                      | 127/300 [00:53<01:12,  2.38it/s]error :0.0
+Testing DataLoader 0:  43%|████████████████████████████▌                                      | 128/300 [00:54<01:12,  2.37it/s]error :0.10204081632653061
+Testing DataLoader 0:  43%|████████████████████████████▊                                      | 129/300 [00:54<01:12,  2.36it/s]
+Testing DataLoader 0:  44%|█████████████████████████████▋                                     | 133/300 [00:55<01:10,  2.38it/s]error :0.0
+Testing DataLoader 0:  45%|█████████████████████████████▉                                     | 134/300 [00:56<01:09,  2.37it/s]
+Testing DataLoader 0:  46%|███████████████████████████████                                    | 139/300 [00:58<01:07,  2.37it/s]error :0.0
+Testing DataLoader 0:  46%|███████████████████████████████                                    | 139/300 [00:58<01:07,  2.37it/s]error :0.0
+Testing DataLoader 0:  48%|████████████████████████████████▍                                  | 145/300 [01:01<01:05,  2.37it/s]error :0.0
+Testing DataLoader 0:  50%|█████████████████████████████████▋                                 | 151/300 [01:04<01:03,  2.35it/s]error :0.0
+Testing DataLoader 0:  52%|███████████████████████████████████                                | 157/300 [01:06<01:00,  2.37it/s]error :0.0
+Testing DataLoader 0:  54%|████████████████████████████████████▍                              | 163/300 [01:08<00:57,  2.38it/s]error :0.0
+Testing DataLoader 0:  54%|████████████████████████████████████▍                              | 163/300 [01:08<00:57,  2.38it/s]error :0.0
+Testing DataLoader 0:  56%|█████████████████████████████████████▋                             | 169/300 [01:11<00:55,  2.37it/s]error :0.5932203389830508
+Testing DataLoader 0:  58%|███████████████████████████████████████                            | 175/300 [01:13<00:52,  2.39it/s]error :0.0932203389830508
+Testing DataLoader 0:  60%|████████████████████████████████████████▍                          | 181/300 [01:16<00:50,  2.37it/s]error :0.0932203389830508
+Testing DataLoader 0:  62%|█████████████████████████████████████████▊                         | 187/300 [01:18<00:47,  2.38it/s]error :0.0932203389830508
+Testing DataLoader 0:  62%|█████████████████████████████████████████▊                         | 187/300 [01:18<00:47,  2.38it/s]error :0.0932203389830508
+Testing DataLoader 0:  64%|███████████████████████████████████████████                        | 193/300 [01:21<00:45,  2.37it/s]error :0.0932203389830508
+Testing DataLoader 0:  66%|████████████████████████████████████████████▍                      | 199/300 [01:23<00:42,  2.38it/s]error :0.0932203389830508
+Testing DataLoader 0:  68%|█████████████████████████████████████████████▊                     | 205/300 [01:25<00:39,  2.40it/s]error :0.04132231404958678
+Testing DataLoader 0:  70%|███████████████████████████████████████████████                    | 211/300 [01:27<00:36,  2.41it/s]error :0.04132231404958678
+Testing DataLoader 0:  72%|████████████████████████████████████████████████▍                  | 217/300 [01:29<00:34,  2.42it/s]error :0.04132231404958678
+Testing DataLoader 0:  74%|█████████████████████████████████████████████████▊                 | 223/300 [01:32<00:31,  2.41it/s]error :0.04132231404958678
+Testing DataLoader 0:  74%|█████████████████████████████████████████████████▊                 | 223/300 [01:32<00:31,  2.41it/s]error :0.04132231404958678
+Testing DataLoader 0:  76%|███████████████████████████████████████████████████▏               | 229/300 [01:35<00:29,  2.40it/s]error :0.04132231404958678
+Testing DataLoader 0:  78%|████████████████████████████████████████████████████▍              | 235/300 [01:37<00:26,  2.42it/s]error :0.06504065040650407
+Testing DataLoader 0:  80%|█████████████████████████████████████████████████████▊             | 241/300 [01:39<00:24,  2.41it/s]error :0.44680851063829785
+Testing DataLoader 0:  82%|███████████████████████████████████████████████████████▏           | 247/300 [01:42<00:21,  2.42it/s]error :0.26829268292682935
+Testing DataLoader 0:  84%|████████████████████████████████████████████████████████▌          | 253/300 [01:43<00:19,  2.43it/s]error :0.06829268292682935
+Testing DataLoader 0:  86%|█████████████████████████████████████████████████████████▊         | 259/300 [01:45<00:16,  2.45it/s]error :0.55829268292682935
+Testing DataLoader 0:  88%|███████████████████████████████████████████████████████████▏       | 265/300 [01:48<00:14,  2.45it/s]error :0.05829268292682935
+Testing DataLoader 0:  90%|████████████████████████████████████████████████████████████▌      | 271/300 [01:49<00:11,  2.47it/s]error :0.40909090909090915
+Testing DataLoader 0:  92%|█████████████████████████████████████████████████████████████▊     | 277/300 [01:52<00:09,  2.47it/s]error :0.00909090909090915
+Testing DataLoader 0:  94%|███████████████████████████████████████████████████████████████▏   | 283/300 [01:54<00:06,  2.46it/s]error :0.00909090909090915
+Testing DataLoader 0:  94%|███████████████████████████████████████████████████████████████▏   | 283/300 [01:54<00:06,  2.46it/s]error :0.00909090909090915
+Testing DataLoader 0:  96%|████████████████████████████████████████████████████████████████▌  | 289/300 [01:57<00:04,  2.46it/s]error :0.00909090909090915
+Testing DataLoader 0:  98%|█████████████████████████████████████████████████████████████████▉ | 295/300 [01:59<00:02,  2.47it/s]error :0.00909090909090915
+Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████| 300/300 [02:02<00:00,  2.44it/s]error :0.00909090909090915
+Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████| 300/300 [02:02<00:00,  2.44it/s]error :0.00909090909090915
