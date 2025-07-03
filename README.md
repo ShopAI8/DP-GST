@@ -1,2 +1,2 @@
-# DP-GST
-To preserve privacy during GST search,we propose a novel GST solver which integrates graph neural networks with diffusion-based generative modeling to find GSTs under privacy-preserving settings. In particular, we design a new GST-customized score network to guide the reverse diffusion process using neighborhoodaware representations.
+# DP-GST:Diffusion-based Group Steiner Tree Search with Differential Privacy
+DP-GST is a diffusion model leveraging Graph Neural Networks (GNNs) as its backbone, designed for solving the Group Steiner Tree (GST) problem under differential privacy constraints.​
