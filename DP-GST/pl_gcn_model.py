@@ -1,4 +1,4 @@
-"""A GCN model for training and evaluating DP-GST models."""
+"""Lightning module for training and evaluating Att-GCRN models."""
 import os
 import time
 import numpy as np
