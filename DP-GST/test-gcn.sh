@@ -12,11 +12,11 @@ python -u train.py \
   --loss_type_GCN "FL" \
   --aggregation_GCN 'mean' \
   --learning_rate_GCN 1e-5 \
-  --storage_path "./" \
-  --cost_path "../data/result/orkut-g3-gcn-epsilon1-delta1e-05/orkut-g3.txt" \
-  --test_split "../data/tasks_30-num_2000-epsilon_1-delta_1e-05/orkut_GST1k-gamma_3-noise/test_split.txt" \
+  --storage_path "/your/storage/path" \
+  --cost_path "/your/result/orkut-g3-gcn-epsilon1-delta1e-05/orkut-g3.txt" \
+  --test_split "/your/tasks_30-num_2000-epsilon_1-delta_1e-05/orkut_GST1k-gamma_3-noise/test_split.txt" \
   --batch_size 1 \
   --num_epochs 15 \
-  --ckpt_path "/home/sunyahui/DIFUSCO/difusco/models4GCN/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt" \
+  --ckpt_path "/your/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt" \
   --able_wandb \
   
