@@ -16,6 +16,6 @@ python -u train.py \
   --test_split "/your/tasks_30-num_2000-epsilon_1-delta_1e-05/orkut_GST1k-gamma_3-noise/test_split.txt" \
   --batch_size 1 \
   --num_epochs 15 \
-  --ckpt_path "/your/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt" \
+  --ckpt_path "/your/models4GCN/gcn-orkut-g3-epsilon1-delta1e-05-task30/wvasakxx/checkpoints/GST-epoch=05-val_solved_cost_mean=0.0046.ckpt" \
   --able_wandb \
   
