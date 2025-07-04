@@ -22,7 +22,6 @@ def arg_parser():
   parser.add_argument('--task', type=str, default='gst')
   parser.add_argument('--model', type=str, default=None)
   parser.add_argument('--storage_path', type=str,default=None)
-  # /home/sunyahui/DIFUSCO/data/result/dblp-g3-epsilon1-delta0.05/dblp-g3-cosine.txt
   parser.add_argument('--cost_path', type=str,default=None)
 
   parser.add_argument('--training_split', type=str, default=None)
@@ -161,7 +160,6 @@ def main(args):
   if args.able_wandb:  
     trainer.logger.finalize("success")  
 
-# 程序入口
 if __name__ == '__main__':
   args = arg_parser()  
   main(args) 
