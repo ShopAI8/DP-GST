@@ -1,4 +1,4 @@
-"""Lightning module for training the DP-GST model."""
+"""Lightning module for training and evaluating the DP-GST model."""
 
 import os
 import time
