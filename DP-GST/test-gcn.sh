@@ -1,6 +1,5 @@
 export PYTHONPATH="$PWD:$PYTHONPATH"
 export CUDA_VISIBLE_DEVICES=0,1,2,3
-#   --training_split "/your/tsp500_train_concorde.txt" \/your/storage/path
 python -u train.py \
   --task "gst" \
   --model "gcn" \
