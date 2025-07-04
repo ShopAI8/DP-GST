@@ -128,4 +128,3 @@ dependencies:
       - wrapt==1.16.0
       - yarl==1.9.4
       - zipp==3.15.0
-prefix: /home/sunyahui/anaconda3/envs/difusco
