@@ -18,3 +18,9 @@ DP-GST is a **diffusion model** leveraging **Graph Neural Networks (GNNs)** as i
 - `DP-GST/pl_gst_model.py`: lightning module for training and evaluating the DP-GST model.
 - `DP-GST/pl_gcn_model.py`: lightning module for training and evaluating Att-GCRN models.
 - `DP-GST/train.py`: processors for training and evaluating
+#  Dependencies
+The environment is as follows. Configure your environment using the commands below:
+```
+conda env create -f environment.yml
+conda activate difusco
+```
