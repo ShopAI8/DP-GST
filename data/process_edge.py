@@ -78,8 +78,6 @@ if __name__ == "__main__":
                 line = line.strip()
                 if not line:
                     continue
-
-                # 处理流程
                 try:
                     edges = parse_graph_data(line)
                     cleaned_edges = remove_duplicate_bidirectional_edges(edges)
