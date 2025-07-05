@@ -232,19 +232,19 @@ if __name__ == "__main__":
                 test_data_120 = test_data[:120]
                 val_data_120 = val_data[:120]
                 with open(
-                        f'./Data_for_GNN_noise/tasks_30-num_2000-epsilon_{epsilon}-delta_{delta}/{name}_GST1k-delta_{gam}-noise/train_split.txt',
+                        os.path.join(file_path, 'train_split.txt'),
                         'a') as f:
                     for line in train_data:
                         f.write(line + "\n")
 
                 with open(
-                        f'./Data_for_GNN_noise/tasks_30-num_2000-epsilon_{epsilon}-delta_{delta}/{name}_GST1k-delta_{gam}-noise/valid_split.txt',
+                        os.path.join(file_path, 'valid_split.txt'),
                         'a') as f:
                     for line in val_data_120:
                         f.write(line + "\n")
 
                 with open(
-                        f'./Data_for_GNN_noise/tasks_30-num_2000-epsilon_{epsilon}-delta_{delta}/{name}_GST1k-delta_{gam}-noise/test_split.txt',
+                        os.path.join(file_path, 'test_split.txt'),
                         'a') as f:
                     for line in test_data_120:
                         f.write(line + "\n")
