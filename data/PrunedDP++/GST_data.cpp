@@ -50,8 +50,6 @@ bool bfs_subgraph(int start, int target_size, vector<int> &subgraph, graph_v_of_
                 subgraph.push_back(neighbor);
 
                 q.push(neighbor);
-
-                // 达到目标大小立即停止
                 if (subgraph.size() == target_size)
                     return true;
             }
@@ -67,22 +65,21 @@ std::vector<std::string> get_all_files(const std::string &folder_path, bool recu
     {
         if (recursive)
         {
-            // 递归遍历所有子目录
             for (const auto &entry : fs::recursive_directory_iterator(folder_path))
             {
                 if (entry.is_regular_file())
-                { // 仅限普通文件
+                { 
                     file_names.push_back(entry.path().string());
                 }
             }
         }
         else
         {
-            // 仅当前目录
+            
             for (const auto &entry : fs::directory_iterator(folder_path))
             {
                 if (entry.is_regular_file())
-                { // 仅限普通文件
+                { 
                     file_names.push_back(entry.path().string());
                 }
             }
@@ -117,9 +114,9 @@ void generateData()
         string path_g="";
         string data_path="";
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::cout << "\nPlease enter the path to the source file of weight: ";
+        std::cout << "\nPlease enter the path to the weight source file: ";
         std::getline(std::cin, path_w);
-        std::cout << "Please enter the path to the source file of group: ";
+        std::cout << "Please enter the path to the group source file: ";
         std::getline(std::cin, path_g);
         std::cout << "Please enter the path to the target file: ";
         std::getline(std::cin, data_path);
