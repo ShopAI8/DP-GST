@@ -16,6 +16,6 @@ python -u train.py \
   --test_split "/your/tasks_30-num_2000-epsilon_1-delta_0.05/dblp_GST1k-gamma_3-noise/test_split.txt" \
   --batch_size 1 \
   --num_epochs 15 \
-  --ckpt_path "/your/gcn-dblp-g3-epsilon1-delta1e-05-task30/ckpt_path/best.ckpt" \
+  --ckpt_path "/your/models/ckpt_path/best.ckpt" \
   --able_wandb \
   
