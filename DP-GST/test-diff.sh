@@ -17,5 +17,5 @@ python -u train.py \
   --inference_diffusion_steps 5 \
   --sequential_sampling 4 \
   --inference_schedule "cosine" \
-  --ckpt_path "/your/models/categorical-cosine-dblp-g3-epsilon1-delta0.05-task30/sppdv347/checkpoints/GST-epoch=06-val_solved_cost_mean=0.0000.ckpt" \
+  --ckpt_path "/your/models/ckpt_path/best.ckpt" \
   --able_wandb \
