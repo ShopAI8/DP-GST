@@ -76,9 +76,24 @@ python -u gst_data_noise.py \
   --seed 1234
   ```
 #  Reproduce
-We provide implementations for three algorithms: **PrunedDP++**,** Att-GCRN**, and **DP-GST**. Reproduce results using these commands. To train your own dataset, modify the path below and adjust model parameters as needed.​
+We provide implementations for three algorithms: **PrunedDP++**,**Att-GCRN**, and **DP-GST**. Reproduce results using these commands. To train your own dataset, modify the path below and adjust model parameters as needed.​
 ## PrunedDP++
-
+Testing on DBLP
+```
+Please select the operation mode: # The program asks
+0 - Generate data # The program asks
+1 - Execute PrunedDP++ on the dataset # The program asks
+Please enter the option (0 or 1). # The program asks
+1 # Select to generate data
+You have selected the algorithm execution mode.# The program asks
+start..# The program asks
+Please enter the number of groups contained in each query task: # The program asks
+number # Input a number
+Please enter a test file:  # The program asks
+/home/your/path # Input the data path
+Please enter the result storage directory: # The program asks
+/home/your/path # Input the result storage directory
+```
 ## Att-GCRN
 Training on DBLP
  ```
