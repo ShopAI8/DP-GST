@@ -11,7 +11,6 @@ double cal_cost(graph_v_of_v_idealID &instance_graph, graph_hash_of_mixed_weight
     {
         for (auto its : it.second.adj_vertices)
         {
-            // file<<it.first<<" "<<its.first<<" ";
             auto a = instance_graph[it.first];
             for (int i = 0; i < a.size(); i++)
             {
