@@ -34,7 +34,7 @@ cmake --build ./build
 After obtaining the noise-free dataset, generate the noisy dataset by running the following command. First, remove bidirectional edges from the subgraph.​
 ```
 cd data
-python -u clean.py \
+python -u process_edge.py \
  --do_file \
  --source_file "/your/source_file/dblp_data_g3_1k.txt" \
  --target_file "/your/target_file/dblp_data_g3_1k_new.txt"\
