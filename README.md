@@ -22,7 +22,7 @@ DP-GST is a **diffusion model** leveraging **Graph Neural Networks (GNNs)** as i
 The environment is as follows. Configure your environment using the commands below:
 ```
 conda env create -f environment.yml
-conda activate difusco
+conda activate dp-gst
 ```
 #  Dataset
 You can download a real graph dataset from the Stanford Network Analysis Project ([SNA 2025](https://snap.stanford.edu/data/index.html)). Then you can run the program `data/PrunedDP++/GST_data.cpp` to extract noise-free subgraphs from the downloaded dataset and log the GST solutions on these subgraphs.​ 
