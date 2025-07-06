@@ -31,6 +31,28 @@ cd data/PrunedDP++
 cmake --build ./build
 ./build/GST_data
 ```
+When running GST_data, the program will ask us to select the task, define the basic parameters and the file path.
+```
+Please select the operation mode: # The program asks
+0 - Generate data # The program asks
+1 - Execute PrunedDP++ on the dataset # The program asks
+Please enter the option (0 or 1). # The program asks
+0 # Select to generate data
+You have selected the data generation mode.# The program asks
+start..# The program asks
+Please enter the number of topological structures generating subgraphs: # The program asks
+number # Input a number
+Please enter the number of query tasks for each subgraph: # The program asks
+number # Input a number
+Please enter the number of groups contained in each query task: # The program asks
+number # Input a number
+Please enter the path to the weight source file: # The program asks
+/home/your/path # Input the data path
+Please enter the path to the group source file: # The program asks
+/home/your/path # Input the data path
+Please enter the path to the target file: # The program asks
+/home/your/path # Input the data path
+```
 After obtaining the noise-free dataset, generate the noisy dataset by running the following command. First, remove bidirectional edges from the subgraph.​
 ```
 cd data
